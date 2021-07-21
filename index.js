@@ -1,6 +1,16 @@
-console.log('** Administration Hotel **');
+console.log('********** Administration Hotel *********');
 
  let lireMenu = require('./presentation');
- 
- lireMenu.start();
+ const clients = require('./clients.json');
+
+
+ /*lireMenu.start();
  lireMenu.menu();
+ */
+
+ let start = lireMenu.saisie();
+ lireMenu.menu();
+
+ lireMenu.saisie();
+     
+
