@@ -26,9 +26,9 @@ function saisie() {
 
 function menu(){
 
-    console.log("1 lister les clients");
-    console.log('Ajout nouveau client')
-    console.log("99. Sortir");
+    console.log("***1-lister les clients***");
+    console.log('***2-Ajout nouveau client***')
+    console.log('***99-Sortir***');
 
 /*
     responseUtilisateur.question("Votre choix?", function(reponse){
@@ -60,16 +60,16 @@ function traiterSaisie(reponse){
                     console.log('fin 99')
                     return;
 
-        case '1' : console.log('Liste des clients');
+        case '1' : console.log('1-Liste des clients');
                     service.listeClients();
                     console.log('fin case 1')
                     menu();
                     saisie();
                     break;
 
-        case '2' : console.log('Ajout nouveau client');
+        case '2' : console.log('2-Ajout nouveau client');
 
-        responseUtilisateur.question('saisir le nom du client : ', function(psaisie) {
+        responseUtilisateur.question('saisir le nom et prénom du client : ', function(psaisie) {
                         service.ajoutNouveauClient(psaisie);
                         menu();
                         saisie();
